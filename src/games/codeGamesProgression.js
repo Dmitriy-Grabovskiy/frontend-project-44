@@ -2,7 +2,7 @@
 
 import { gameFn, getRandomInt } from '../index';
 
-export default function codeGamesProgression() {
+function codeGamesProgression() {
   const testArr = [];
   const task = 'What number is missing in the progression?';
   let lengthProgression;
@@ -33,3 +33,4 @@ export default function codeGamesProgression() {
   }
   gameFn(testArr, task);
 }
+export default codeGamesProgression;

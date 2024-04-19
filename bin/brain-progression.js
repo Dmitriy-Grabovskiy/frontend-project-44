@@ -1,6 +1,5 @@
-#!/usr/bin/env node 
+#!/usr/bin/env node
 
-import {codeGamesProgression} from '../src/games/codeGamesProgression.js'
+import { codeGamesProgression } from '../src/games/codeGamesProgression.js';
 
-codeGamesProgression()
-
+codeGamesProgression();

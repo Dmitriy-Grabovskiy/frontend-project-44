@@ -1,6 +1,5 @@
-#!/usr/bin/env node 
+#!/usr/bin/env node
 
-import {codeGamesGcd} from '../src/games/codeGamesGcd.js'
+import { codeGamesGcd } from '../src/games/codeGamesGcd.js';
 
-codeGamesGcd()
-
+codeGamesGcd();

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { gameFn, getRandomInt } from '../index';
 
-export default function codeGamesPrime() {
+function codeGamesPrime() {
   const testArr = [];
 
   const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -23,3 +23,4 @@ export default function codeGamesPrime() {
   }
   gameFn(testArr, task);
 }
+export default codeGamesPrime;

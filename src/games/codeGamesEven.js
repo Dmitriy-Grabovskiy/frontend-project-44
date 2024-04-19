@@ -2,7 +2,7 @@
 
 import { gameFn, getRandomInt } from '../index';
 
-export default function codeGamesEven() {
+function codeGamesEven() {
   const task = 'Answer "yes" if the number is even, otherwise answer "no".';
   const testArr = [];
   let oneNumber;
@@ -14,3 +14,4 @@ export default function codeGamesEven() {
   }
   gameFn(testArr, task);
 }
+export default codeGamesEven;

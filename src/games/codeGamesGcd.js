@@ -2,7 +2,7 @@
 
 import { gameFn, getRandomInt } from '../index';
 
-export default function codeGamesGcd() {
+function codeGamesGcd() {
   const task = 'Find the greatest common divisor of given numbers.';
   const testArr = [];
   let oneNumber;
@@ -46,3 +46,4 @@ export default function codeGamesGcd() {
   }
   gameFn(testArr, task);
 }
+export default codeGamesGcd;

@@ -2,7 +2,7 @@
 
 import { gameFn, getRandomInt } from '../index';
 
-export default function codeGamesCalc() {
+function codeGamesCalc() {
   const task = 'What is the result of the expression?';
   const testArr = [];
   const operationObj = ['+', '-', '*'];
@@ -24,3 +24,4 @@ export default function codeGamesCalc() {
   }
   gameFn(testArr, task);
 }
+export default codeGamesCalc;
