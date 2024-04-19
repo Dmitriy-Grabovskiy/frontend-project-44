@@ -17,7 +17,7 @@ export default [
         rules: {
             "no-console": "off",
 			"import/extensions": "off",
-            "linebreak-style": "off",
+        //    "linebreak-style": "off",
         }
     },
 ];
