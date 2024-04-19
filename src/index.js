@@ -3,14 +3,14 @@
 import readlineSync from 'readline-sync';
 import {getName, nameUser} from '../src/cli.js'
 
-	function gameFn (test) {
+	function gameFn (test,task) {
 		let countResponseTrue = 0;
 		const countWinningRound = 3;
 		let answerUser;
 
 		console.log('Welcome to the Brain Games!');
 		getName()
-		console.log('Answer "yes" if the number is even, otherwise answer "no".');
+		console.log(task);
 		for (let i = 0; i < countWinningRound; i++) {
 			console.log('Question: ' + test[i].question);
 			answerUser = readlineSync.question('Your answer: ');

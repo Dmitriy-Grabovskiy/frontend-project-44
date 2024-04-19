@@ -3,6 +3,8 @@
 import {gameFn, getRandomInt} from '../index.js'
 
 function codeGamesCalc () {
+
+	let task = 'What is the result of the expression?'
 	const testArr = []
   	const operationObj = ['+','-','*']
 
@@ -22,6 +24,6 @@ function codeGamesCalc () {
 		var obj = {question: result, answer: eval(result)};
 		testArr.push(obj);
 	}
-	gameFn(testArr)
+	gameFn(testArr,task)
 }
 export{codeGamesCalc}

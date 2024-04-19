@@ -4,6 +4,7 @@ import {gameFn, getRandomInt} from '../index.js'
 
 function codeGamesEven () {
 
+	let task = 'Answer "yes" if the number is even, otherwise answer "no".'
 	const testArr = []
 	let oneNumber;
 
@@ -12,6 +13,6 @@ function codeGamesEven () {
 		var obj = {question: oneNumber, answer: oneNumber%2 == 0?'yes':'no'};
 		testArr.push(obj);
 	}
-	gameFn(testArr)
+	gameFn(testArr,task)
 }
 export{codeGamesEven}

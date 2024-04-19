@@ -4,7 +4,7 @@ import {gameFn, getRandomInt} from '../index.js'
 
 function codeGamesProgression () {
 	const testArr = []
-
+	let task = 'What number is missing in the progression?'
 	let lengthProgression;
 	let numberEmptyElement;
 	let startNumber;
@@ -31,6 +31,6 @@ function codeGamesProgression () {
 		testArr.push(obj);
 		result = '';
 	}
-	gameFn(testArr)
+	gameFn(testArr, task)
 }
 export{codeGamesProgression}

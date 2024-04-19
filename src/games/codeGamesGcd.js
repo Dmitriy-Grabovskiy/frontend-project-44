@@ -4,8 +4,9 @@ import {gameFn, getRandomInt} from '../index.js'
 
 
 function codeGamesGcd () {
-	const testArr = []
 
+	let task = 'Find the greatest common divisor of given numbers.'
+	const testArr = []
 	let oneNumber;
 	let twoNumber;
 	let max;
@@ -44,6 +45,6 @@ function codeGamesGcd () {
 		var obj = {question: result, answer: answer};
 		testArr.push(obj);
 	}
-	gameFn(testArr)
+	gameFn(testArr,task)
 }
 export{codeGamesGcd}

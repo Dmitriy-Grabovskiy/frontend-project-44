@@ -5,6 +5,7 @@ import {gameFn, getRandomInt} from '../index.js'
 function codeGamesPrime () {
 	const testArr = []
 
+	let task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 	let number;
 	let answer;
 	for (let k = 0; k < 3; k++) {
@@ -21,6 +22,6 @@ function codeGamesPrime () {
 		var obj = {question: number, answer: answer};
 		testArr.push(obj);
 	}
-	gameFn(testArr)
+	gameFn(testArr,task)
 }
 export{codeGamesPrime}
