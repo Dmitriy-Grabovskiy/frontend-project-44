@@ -18,7 +18,7 @@ function codeGamesCalc () {
 		oneNumber = getRandomInt(100);
 		twoNumber = getRandomInt(100);
 		operationNumber = getRandomInt(3)
-
+;
 		operation = operationObj[operationNumber];
 		result = oneNumber + ' ' + operation + ' ' + twoNumber
 		var obj = {question: result, answer: eval(result)};

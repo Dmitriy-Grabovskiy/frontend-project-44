@@ -15,6 +15,8 @@ function codeGamesPrime () {
 			if(number%i == 0 && i!==number || number == 1){
 				answer = 'no'
 				break
+
+				
 			}else{
 				answer = 'yes'
 			}

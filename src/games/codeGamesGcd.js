@@ -10,7 +10,8 @@ function codeGamesGcd () {
 	let oneNumber;
 	let twoNumber;
 	let max;
-	let min;
+	let 
+	min;
 	let result;
 	let answer;
 
