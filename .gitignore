@@ -2,3 +2,7 @@
 *.log
 coverage
 .DS_Store
+
+eslint.config.js
+
+!/eslint.config.js
