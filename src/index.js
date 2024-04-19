@@ -2,7 +2,6 @@
 /* eslint-disable eqeqeq */
 
 import readlineSync from 'readline-sync';
-import { getName, nameUser } from './cli.js';
 
 function gameFn(test, task) {
   let countResponseTrue = 0;
@@ -10,7 +9,8 @@ function gameFn(test, task) {
   let answerUser;
 
   console.log('Welcome to the Brain Games!');
-  getName();
+  const nameUser = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${nameUser}!`);
   console.log(task);
   for (let i = 0; i < countWinningRound; i += 1) {
     console.log(`Question: ${test[i].question}`);
