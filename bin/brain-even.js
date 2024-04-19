@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import codeGamesEven from '../src/games/codeGamesEven.js';
+// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
+import { codeGamesEven } from '../src/games/codeGamesEven.js';
 
 codeGamesEven();

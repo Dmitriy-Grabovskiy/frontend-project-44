@@ -11,13 +11,13 @@ function gameFn(test, task) {
   console.log('Welcome to the Brain Games!');
   getName();
   console.log(task);
-  for (let i = 0; i < countWinningRound; i++) {
+  for (let i = 0; i < countWinningRound; i += 1) {
     console.log(`Question: ${test[i].question}`);
     answerUser = readlineSync.question('Your answer: ');
-    if (answerUser == test[i].answer) {
+    if (answerUser === test[i].answer) {
       console.log('Correct!');
-      countResponseTrue++;
-      if (countResponseTrue == countWinningRound) {
+      countResponseTrue += 1;
+      if (countResponseTrue === countWinningRound) {
         console.log(`Congratulations, ${nameUser}!`);
         break;
       }

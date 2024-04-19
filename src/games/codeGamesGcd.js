@@ -13,7 +13,7 @@ function codeGamesGcd() {
   let result;
   let answer;
 
-  for (let i = 0; i < 3; i++) {
+  for (let k = 0; k < 3; k += 1) {
     oneNumber = getRandomInt(100);
     twoNumber = getRandomInt(100);
     result = `${oneNumber} ${twoNumber}`;
@@ -26,13 +26,13 @@ function codeGamesGcd() {
       max = twoNumber;
     }
 
-    if (max % min == 0) {
+    if (max % min === 0) {
       answer = min;
     } else {
-      for (let i = 2; i <= min; i++) {
+      for (let i = 2; i <= min; i += 1) {
         if (i !== min && i <= (max - min)) {
-          if (min % i == 0) {
-            if (max % (min / i) == 0) {
+          if (min % i === 0) {
+            if (max % (min / i) === 0) {
               answer = min / i;
               break;
             }

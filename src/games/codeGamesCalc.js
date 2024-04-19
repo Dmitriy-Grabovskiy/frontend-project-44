@@ -13,12 +13,13 @@ function codeGamesCalc() {
   let operation;
   let result;
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i += 1) {
     oneNumber = getRandomInt(100);
     twoNumber = getRandomInt(100);
     operationNumber = getRandomInt(3);
     operation = operationObj[operationNumber];
     result = `${oneNumber} ${operation} ${twoNumber}`;
+    // eslint-disable-next-line no-eval
     const obj = { question: result, answer: eval(result) };
     testArr.push(obj);
   }
