@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { codeGamesPrime } from '../src/games/codeGamesPrime.js';
+import codeGamesPrime from '../src/games/codeGamesPrime.js';
 
 codeGamesPrime();
