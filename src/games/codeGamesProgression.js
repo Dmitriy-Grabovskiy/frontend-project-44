@@ -21,9 +21,9 @@ function codeGamesProgression () {
 		for (let i = 1; i <= lengthProgression; i++) {
 			value = startNumber + i * step;
 			if(i !== numberEmptyElement){
-				result += " " + value;
+				result += value + " " ;
 			}else {
-				result += " ..";
+				result += ".. ";
 				answer = value;
 			}
 		}
