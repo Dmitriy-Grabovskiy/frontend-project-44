@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { gameFn, getRandomInt } from '../index';
+import { gameFn, getRandomInt } from '../index.js';
 
 function codeGamesPrime() {
   const testArr = [];

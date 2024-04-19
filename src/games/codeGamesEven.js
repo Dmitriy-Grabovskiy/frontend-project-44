@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { gameFn, getRandomInt } from '../index';
+import { gameFn, getRandomInt } from '../index.js';
 
 function codeGamesEven() {
   const task = 'Answer "yes" if the number is even, otherwise answer "no".';
