@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable eqeqeq */
 
 import { gameFn, getRandomInt } from '../index.js';
 
@@ -31,8 +32,8 @@ function codeGamesGcd() {
     } else {
       for (let i = 2; i <= min; i += 1) {
         if (i !== min && i <= (max - min)) {
-          if (min % i === 0) {
-            if (max % (min / i) === 0) {
+          if (min % i == 0) {
+            if (max % (min / i) == 0) {
               answer = min / i;
               break;
             }

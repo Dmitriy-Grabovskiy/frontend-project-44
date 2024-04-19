@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable eqeqeq */
 
 import readlineSync from 'readline-sync';
 import { getName, nameUser } from './cli.js';
@@ -14,10 +15,11 @@ function gameFn(test, task) {
   for (let i = 0; i < countWinningRound; i += 1) {
     console.log(`Question: ${test[i].question}`);
     answerUser = readlineSync.question('Your answer: ');
-    if (answerUser === test[i].answer) {
+
+    if (answerUser == test[i].answer) {
       console.log('Correct!');
       countResponseTrue += 1;
-      if (countResponseTrue === countWinningRound) {
+      if (countResponseTrue == countWinningRound) {
         console.log(`Congratulations, ${nameUser}!`);
         break;
       }

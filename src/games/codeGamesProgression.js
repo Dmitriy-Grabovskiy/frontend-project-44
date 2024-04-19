@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable eqeqeq */
 
 import { gameFn, getRandomInt } from '../index.js';
 
@@ -20,7 +21,7 @@ function codeGamesProgression() {
     step = getRandomInt(10);
     for (let i = 1; i <= lengthProgression; i += 1) {
       value = startNumber + i * step;
-      if (i !== numberEmptyElement) {
+      if (i != numberEmptyElement) {
         result += `${value} `;
       } else {
         result += '.. ';
