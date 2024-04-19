@@ -2,9 +2,7 @@
 
 import {gameFn, getRandomInt} from '../index.js'
 
-
 function codeGamesCalc () {
-	console.log("codeGamesCalc");
 	const testArr = []
   	const operationObj = ['+','-','*']
 

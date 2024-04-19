@@ -4,7 +4,6 @@ import {gameFn, getRandomInt} from '../index.js'
 
 function codeGamesEven () {
 
-	console.log("codeGamesEven");
 	const testArr = []
 	let oneNumber;
 

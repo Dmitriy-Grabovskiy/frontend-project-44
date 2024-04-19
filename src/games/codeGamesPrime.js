@@ -3,7 +3,6 @@
 import {gameFn, getRandomInt} from '../index.js'
 
 function codeGamesPrime () {
-	console.log("codeGamesPrime");
 	const testArr = []
 
 	let number;

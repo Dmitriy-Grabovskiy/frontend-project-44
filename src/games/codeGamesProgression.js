@@ -3,7 +3,6 @@
 import {gameFn, getRandomInt} from '../index.js'
 
 function codeGamesProgression () {
-	console.log("codeGamesProgression");
 	const testArr = []
 
 	let lengthProgression;
