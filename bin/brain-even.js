@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { codeGamesEven } from '../src/cli.js';
+import { codeGamesEven } from '../src/games/codeGamesEven.js';
 
 codeGamesEven();
