@@ -1,37 +1,32 @@
 #!/usr/bin/env node
 /* eslint-disable eqeqeq */
 
-import { gameFn, getRandomInt } from '../index.js';
+import { runEngine, getRandomInt } from '../index.js';
 
-function codeGamesProgression() {
-  const testArr = [];
-  const task = 'What number is missing in the progression?';
-  let lengthProgression;
-  let numberEmptyElement;
-  let startNumber;
-  let step;
-  let result = '';
+function generateRound() {
+  let question = '';
   let value;
   let answer;
 
-  for (let k = 0; k < 3; k += 1) {
-    lengthProgression = getRandomInt(15, 5);
-    numberEmptyElement = getRandomInt(lengthProgression);
-    startNumber = getRandomInt(100);
-    step = getRandomInt(10);
-    for (let i = 1; i <= lengthProgression; i += 1) {
-      value = startNumber + i * step;
-      if (i != numberEmptyElement) {
-        result += `${value} `;
-      } else {
-        result += '.. ';
-        answer = value;
-      }
+  const lengthProgression = getRandomInt(15, 5);
+  const numberEmptyElement = getRandomInt(lengthProgression);
+  const startNumber = getRandomInt(100);
+  const step = getRandomInt(10);
+  for (let i = 1; i <= lengthProgression; i += 1) {
+    value = startNumber + i * step;
+    if (i != numberEmptyElement) {
+      question += `${value} `;
+    } else {
+      question += '.. ';
+      answer = value;
     }
-    const obj = { question: result, answer };
-    testArr.push(obj);
-    result = '';
   }
-  gameFn(testArr, task);
+
+  return [question, answer];
+}
+
+function codeGamesProgression() {
+  const rules = 'What number is missing in the progression?';
+  runEngine(generateRound, rules);
 }
 export default codeGamesProgression;

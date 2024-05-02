@@ -1,28 +1,20 @@
 #!/usr/bin/env node
 
-import { gameFn, getRandomInt } from '../index.js';
+import { runEngine, getRandomInt } from '../index.js';
 
-function codeGamesCalc() {
-  const task = 'What is the result of the expression?';
-  const testArr = [];
+function generateRound() {
   const operationObj = ['+', '-', '*'];
-
-  let oneNumber;
-  let operationNumber;
-  let twoNumber;
-  let operation;
-  let result;
-
-  for (let i = 0; i < 3; i += 1) {
-    oneNumber = getRandomInt(100);
-    twoNumber = getRandomInt(100);
-    operationNumber = getRandomInt(3);
-    operation = operationObj[operationNumber];
-    result = `${oneNumber} ${operation} ${twoNumber}`;
-    // eslint-disable-next-line no-eval
-    const obj = { question: result, answer: eval(result) };
-    testArr.push(obj);
-  }
-  gameFn(testArr, task);
+  const oneNumber = getRandomInt(100);
+  const twoNumber = getRandomInt(100);
+  const operationNumber = getRandomInt(3);
+  const operation = operationObj[operationNumber];
+  const result = `${oneNumber} ${operation} ${twoNumber}`;
+  // eslint-disable-next-line no-eval
+  return [result, eval(result)];
 }
+function codeGamesCalc() {
+  const rules = 'What is the result of the expression?';
+  runEngine(generateRound, rules);
+}
+
 export default codeGamesCalc;
