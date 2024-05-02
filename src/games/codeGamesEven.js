@@ -5,7 +5,7 @@ import { runEngine, getRandomInt } from '../index.js';
 
 function generateRound() {
   const number = getRandomInt(100);
-  const answer = { question: number, answer: number % 2 == 0 ? 'yes' : 'no' };
+  const answer = number % 2 == 0 ? 'yes' : 'no' ;
   return [number, answer];
 }
 
