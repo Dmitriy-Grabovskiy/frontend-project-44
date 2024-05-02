@@ -24,7 +24,6 @@ function generateRound() {
     answer = min;
   } else {
     for (let i = 2; i <= min; i += 1) {
-      console.log('i', i);
       if (i !== min && i <= (max - min)) {
         if (min % i == 0) {
           if (max % (min / i) == 0) {
