@@ -5,9 +5,10 @@ import readlineSync from 'readline-sync';
 
 import getName from './cli.js';
 
+let countResponseTrue = 0;
+const countWinningRound = 3;
+
 function gameFn(test, task) {
-  let countResponseTrue = 0;
-  const countWinningRound = 3;
   let answerUser;
 
   const nameUser = getName();

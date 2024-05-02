@@ -11,14 +11,16 @@ This program contains several games:
     npm link - команда для установки пакета в систему 
     brain-<имя игры> команда запуска установноенного пакета игры
 
-Instructions install and run program games: 
-<script src="https://asciinema.org/a/7iPAuKclTCj4UlBrYtUkBSnfv.js" id="asciicast-654999" async="true">brain-even</script>
+Video instructions install and run program games: 
+brain-even:			 
+<a href="https://asciinema.org/a/gioIhWrfE0VdRxGY7p8EBzF0S" target="_blank"><img src="https://asciinema.org/a/gioIhWrfE0VdRxGY7p8EBzF0S.svg" /></a>
+brain-calc:			 
+<a href="https://asciinema.org/a/rY3hL9QJvPgh4FqmlFjY8cSWQ" target="_blank"><img src="https://asciinema.org/a/rY3hL9QJvPgh4FqmlFjY8cSWQ.svg" /></a>
+brain-gcd:			 
 <a href="https://asciinema.org/a/7iPAuKclTCj4UlBrYtUkBSnfv" target="_blank"><img src="https://asciinema.org/a/7iPAuKclTCj4UlBrYtUkBSnfv.svg" /></a>
-[![asciicast](https://asciinema.org/a/7iPAuKclTCj4UlBrYtUkBSnfv.svg)](https://asciinema.org/a/7iPAuKclTCj4UlBrYtUkBSnfv)
-brain-even:			 https://asciinema.org/a/gioIhWrfE0VdRxGY7p8EBzF0S
-brain-calc:			 https://asciinema.org/a/rY3hL9QJvPgh4FqmlFjY8cSWQ
-brain-gcd:			 https://asciinema.org/a/7iPAuKclTCj4UlBrYtUkBSnfv
-brain-progression:	 https://asciinema.org/a/dWUqEQaTcQBsvn1awiVZqzhLZ
-brain-prime:		 https://asciinema.org/a/ylRBLorVCovbldIhsIx0HvjrK
+brain-progression:	 
+<a href="https://asciinema.org/a/dWUqEQaTcQBsvn1awiVZqzhLZ" target="_blank"><img src="https://asciinema.org/a/dWUqEQaTcQBsvn1awiVZqzhLZ.svg" /></a>
+brain-prime:		 
+<a href="https://asciinema.org/a/ylRBLorVCovbldIhsIx0HvjrK" target="_blank"><img src="https://asciinema.org/a/ylRBLorVCovbldIhsIx0HvjrK.svg" /></a>
 
 
