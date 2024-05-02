@@ -1,16 +1,16 @@
 #!/usr/bin/env node
-/* eslint-disable eqeqeq */
+/* eslint-disable */
 
 import readlineSync from 'readline-sync';
+
+import getName from './cli.js';
 
 function gameFn(test, task) {
   let countResponseTrue = 0;
   const countWinningRound = 3;
   let answerUser;
 
-  console.log('Welcome to the Brain Games!');
-  const nameUser = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${nameUser}!`);
+  const nameUser = getName();
   console.log(task);
   for (let i = 0; i < countWinningRound; i += 1) {
     console.log(`Question: ${test[i].question}`);
