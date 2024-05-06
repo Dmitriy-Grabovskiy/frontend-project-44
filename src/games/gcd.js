@@ -10,8 +10,8 @@ function generateRound() {
   let min;
   let answer;
 
-  const oneNumber = getRandomInt();
-  const twoNumber = getRandomInt();
+  const oneNumber = getRandomInt(100,1);
+  const twoNumber = getRandomInt(100,1);
   const question = `${oneNumber} ${twoNumber}`;
 
   if (oneNumber > twoNumber) {
