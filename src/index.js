@@ -28,5 +28,4 @@ function runEngine(generateRound, rules) {
   console.log(`Congratulations, ${nameUser}!`);
 }
 
-
 export { runEngine };
