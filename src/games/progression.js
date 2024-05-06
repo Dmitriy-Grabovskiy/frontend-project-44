@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 /* eslint-disable eqeqeq */
 
-import { runEngine, getRandomInt } from '../index.js';
+import { runEngine } from '../index.js';
+
+import { getRandomInt } from '../utils.js';
 
 function generateRound() {
   let question = '';
@@ -10,7 +12,7 @@ function generateRound() {
 
   const lengthProgression = getRandomInt(15, 5);
   const numberEmptyElement = getRandomInt(lengthProgression);
-  const startNumber = getRandomInt(100);
+  const startNumber = getRandomInt();
   const step = getRandomInt(10);
   for (let i = 1; i <= lengthProgression; i += 1) {
     value = startNumber + i * step;
@@ -25,8 +27,8 @@ function generateRound() {
   return [question, answer];
 }
 
-function codeGamesProgression() {
+function runProgressionGame() {
   const rules = 'What number is missing in the progression?';
   runEngine(generateRound, rules);
 }
-export default codeGamesProgression;
+export default runProgressionGame;

@@ -1,15 +1,17 @@
 #!/usr/bin/env node
 /* eslint-disable */
 
-import { runEngine, getRandomInt } from '../index.js';
+import { runEngine } from '../index.js';
+
+import { getRandomInt } from '../utils.js';
 
 function generateRound() {
   let max;
   let min;
   let answer;
 
-  const oneNumber = getRandomInt(100);
-  const twoNumber = getRandomInt(100);
+  const oneNumber = getRandomInt();
+  const twoNumber = getRandomInt();
   const question = `${oneNumber} ${twoNumber}`;
 
   if (oneNumber > twoNumber) {
@@ -37,9 +39,9 @@ function generateRound() {
   return [question, answer];
 }
 
-function codeGamesGcd() {
+function runGcdGame() {
   const rules = 'Find the greatest common divisor of given numbers.';
   runEngine(generateRound, rules);
 }
 
-export default codeGamesGcd;
+export default runGcdGame;

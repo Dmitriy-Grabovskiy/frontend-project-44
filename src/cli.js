@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
-function getName() {
+function makeWelcome() {
   console.log('Welcome to the Brain Games!');
   const nameUser = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${nameUser}!`);
@@ -9,4 +9,4 @@ function getName() {
   return nameUser;
 }
 
-export default getName;
+export default makeWelcome;

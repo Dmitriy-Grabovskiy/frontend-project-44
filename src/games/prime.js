@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 /* eslint-disable */
-import { runEngine, getRandomInt } from '../index.js';
+import { runEngine } from '../index.js';
+import { getRandomInt } from '../utils.js';
 
 function generateRound() {
     let answer;
-    let question = getRandomInt(1);
+    let question = getRandomInt();
     if (question == 1){
       answer = 'no';
     }else{
@@ -21,8 +22,8 @@ function generateRound() {
   return [question, answer];
 }
 
-function codeGamesPrime() {
+function runPrimeGame() {
   const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   runEngine(generateRound, rules);
 }
-export default codeGamesPrime;
+export default runPrimeGame;
