@@ -1,4 +1,4 @@
-/* eslint-disable eqeqeq*/
+/* eslint-disable eqeqeq */
 import readlineSync from 'readline-sync';
 import makeWelcome from './cli.js';
 
