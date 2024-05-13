@@ -17,7 +17,7 @@ function generateRound() {
   const indexEmptyElement = getRandomInt(lengthProgression - 1);
   const arrayProgression = generateProgression(getRandomInt(), getRandomInt(10), lengthProgression);
   const answer = arrayProgression[indexEmptyElement];
-  arrayProgression[indexEmptyElement] = '.. ';
+  arrayProgression[indexEmptyElement] = '..';
   question = arrayProgression.join(' ');
 
   return [question, answer];
