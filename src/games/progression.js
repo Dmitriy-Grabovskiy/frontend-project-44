@@ -13,7 +13,7 @@ const generateProgression = (start, step, length) => {
 function generateRound() {
   let question = '';
 
-  const lengthProgression = getRandomInt(15, 5);
+  const lengthProgression = getRandomInt(10, 5);
   const indexEmptyElement = getRandomInt(lengthProgression - 1);
   const arrayProgression = generateProgression(getRandomInt(), getRandomInt(10), lengthProgression);
   const answer = arrayProgression[indexEmptyElement];
