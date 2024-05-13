@@ -21,4 +21,7 @@ rules:
     - error
     - ignorePackages
     - js: always
+    - no-named-as-default
+    - no-named-as-default-member
+
   no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]

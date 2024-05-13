@@ -1,14 +1,9 @@
-#!/usr/bin/env node
-/* eslint-disable */
-
 import readlineSync from 'readline-sync';
 import makeWelcome from './cli.js';
 
 const roundCount = 3;
 
 function runEngine(generateRound, rules) {
-  let countResponseTrue = 0;
-
   const nameUser = makeWelcome();
 
   console.log(rules);
@@ -28,4 +23,4 @@ function runEngine(generateRound, rules) {
   console.log(`Congratulations, ${nameUser}!`);
 }
 
-export { runEngine };
+export default runEngine;

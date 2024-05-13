@@ -1,8 +1,5 @@
-#!/usr/bin/env node
-
-import { runEngine } from '../index.js';
-
-import { getRandomInt } from '../utils.js';
+import runEngine from '../index.js';
+import getRandomInt from '../utils.js';
 
 const calculation = (num1, num2, operator) => {
   switch (operator) {

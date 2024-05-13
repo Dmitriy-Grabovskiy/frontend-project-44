@@ -1,42 +1,17 @@
-#!/usr/bin/env node
-/* eslint-disable */
+import runEngine from '../index.js';
+import getRandomInt from '../utils.js';
 
-import { runEngine } from '../index.js';
-
-import { getRandomInt } from '../utils.js';
+const getGcd = (num1, num2) => {
+  if (num1 === 0) { return num2; }
+  return getGcd(num2 % num1, num1);
+};
 
 function generateRound() {
-  let max;
-  let min;
-  let answer;
-
-  const oneNumber = getRandomInt(100,1);
-  const twoNumber = getRandomInt(100,1);
+  const oneNumber = getRandomInt(100, 1);
+  const twoNumber = getRandomInt(100, 1);
   const question = `${oneNumber} ${twoNumber}`;
 
-  if (oneNumber > twoNumber) {
-    max = oneNumber;
-    min = twoNumber;
-  } else {
-    min = oneNumber;
-    max = twoNumber;
-  }
-
-  if (max % min === 0) {
-    answer = min;
-  } else {
-    for (let i = 2; i <= min; i += 1) {
-      if (i !== min && i <= (max - min)) {
-        if (min % i == 0) {
-          if (max % (min / i) == 0) {
-            answer = min / i;
-            break;
-          }
-        }
-      } else (answer = 1);
-    }
-  }
-  return [question, answer];
+  return [question, getGcd(oneNumber, twoNumber)];
 }
 
 function runGcdGame() {

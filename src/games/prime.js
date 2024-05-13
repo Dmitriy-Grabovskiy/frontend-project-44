@@ -1,24 +1,22 @@
-#!/usr/bin/env node
-/* eslint-disable */
-import { runEngine } from '../index.js';
-import { getRandomInt } from '../utils.js';
+import runEngine from '../index.js';
+import getRandomInt from '../utils.js';
+
+function checkPrimeNumber(number) {
+  if (number == 1) {
+    return false;
+  }
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
 
 function generateRound() {
-    let answer;
-    let question = getRandomInt();
-    if (question == 1){
-      answer = 'no';
-    }else{
-    for (let i = 2; i <= question; i += 1) {
-      if ((question % i == 0 && i != question)) {
-        answer = 'no';
-        break;
-      } else {
-        answer = 'yes';
-      }
-    }
-  } 
- 
+  const question = getRandomInt();
+
+  const answer = checkPrimeNumber(question) ? 'yes' : 'no';
   return [question, answer];
 }
 
