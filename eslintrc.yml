@@ -23,5 +23,6 @@ rules:
     - js: always
     - no-named-as-default
     - no-named-as-default-member
+    - eqeqeq
 
   no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]

@@ -2,7 +2,7 @@ import runEngine from '../index.js';
 import getRandomInt from '../utils.js';
 
 function checkPrimeNumber(number) {
-  if (number == 1) {
+  if (number === 1) {
     return false;
   }
   for (let i = 2; i < number; i += 1) {

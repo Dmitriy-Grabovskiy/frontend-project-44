@@ -3,7 +3,7 @@ import getRandomInt from '../utils.js';
 
 function generateRound() {
   const question = getRandomInt();
-  const answer = question % 2 == 0 ? 'yes' : 'no';
+  const answer = question % 2 === 0 ? 'yes' : 'no';
   return [question, answer];
 }
 
